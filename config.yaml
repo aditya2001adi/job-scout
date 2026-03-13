@@ -1,0 +1,395 @@
+# Job Scout configuration
+# Edit this file to tune your job search preferences.
+
+# ---------- YOUR PROFILE ----------
+profile:
+  name: Aditya Bhalla
+  email: adityabhalla714@gmail.com
+  # Resume summary sent to Claude for "why you'd be a fit" explanations
+  summary: |
+    Strategy & operations professional with 2.5 years of experience at L.E.K. Consulting
+    (senior associate, 13 growth strategy and due diligence engagements for corporate and PE clients)
+    and Angi (strategy & ops analyst, A/B testing, Looker dashboards, $2.2M revenue impact).
+    Pomona College graduate, double major in Mathematics and Politics, GPA 3.93.
+    Skills: Python, R, SQL, Excel, Tableau, financial modeling, market sizing, stakeholder management.
+    Background in industrial sector consulting (building materials, waste management, construction).
+    Strong interest in progressive/civic tech, political campaigns, and mission-driven orgs.
+
+# ---------- EMAIL SETTINGS ----------
+email:
+  to: aditya2001adi@gmail.com
+  from: aditya2001adi@gmail.com
+  subject: "Job Scout: {count} new matches for {date}"
+  # Brevo SMTP — set BREVO_SMTP_LOGIN and BREVO_SMTP_KEY env vars
+  # Get these from brevo.com → SMTP & API → SMTP tab (free, no card)
+  smtp_host: smtp-relay.brevo.com
+  smtp_port: 587
+
+# ---------- DIGEST SETTINGS ----------
+digest:
+  max_jobs: 15         # Jobs to include in each daily email
+  min_score: 30        # Minimum relevance score (0-100) to include a job
+  max_per_company: 1   # Max jobs from the same company in one digest
+
+# ---------- LOCATION FILTER ----------
+location_filter:
+  us_only: true
+  # Whitelist approach: jobs with a location set must contain a US state name,
+  # state abbreviation, "remote", "United States", etc. to pass.
+  # Jobs with no location field are allowed through (most are US companies).
+  # The non_us_keywords list below is no longer used — kept for reference only.
+  non_us_keywords:
+    # Global/regional catch-alls (most impactful)
+    - "worldwide"
+    - "global"
+    - "emea"
+    - "apac"
+    - "latam"
+    - "europe"
+    - "homeoffice"       # German/European "home office" spelling
+    # North America (non-US)
+    - "canada"
+    - "toronto"
+    - "vancouver"
+    - "montreal"
+    - "ottawa"
+    - "calgary"
+    - "mexico"
+    - "mexico city"
+    # UK & Ireland
+    - "uk"
+    - "united kingdom"
+    - "london"
+    - "england"
+    - "scotland"
+    - "wales"
+    - "manchester"
+    - "birmingham"
+    - "ireland"
+    - "dublin"
+    # Western Europe
+    - "germany"
+    - "berlin"
+    - "munich"
+    - "hamburg"
+    - "frankfurt"
+    - "france"
+    - "paris"
+    - "netherlands"
+    - "amsterdam"
+    - "sweden"
+    - "stockholm"
+    - "norway"
+    - "oslo"
+    - "denmark"
+    - "copenhagen"
+    - "finland"
+    - "helsinki"
+    - "switzerland"
+    - "zurich"
+    - "austria"
+    - "vienna"
+    - "belgium"
+    - "brussels"
+    - "spain"
+    - "madrid"
+    - "barcelona"
+    - "italy"
+    - "milan"
+    - "rome"
+    - "portugal"
+    - "lisbon"
+    # Eastern Europe
+    - "poland"
+    - "warsaw"
+    - "czech"
+    - "prague"
+    - "ukraine"
+    - "kyiv"
+    - "romania"
+    - "bucharest"
+    - "hungary"
+    - "budapest"
+    - "bulgaria"
+    - "croatia"
+    - "serbia"
+    - "greece"
+    - "athens"
+    - "lithuania"
+    - "vilnius"
+    - "latvia"
+    - "estonia"
+    - "cyprus"
+    - "turkey"
+    - "istanbul"
+    # Asia-Pacific
+    - "india"
+    - "bangalore"
+    - "bengaluru"
+    - "mumbai"
+    - "delhi"
+    - "hyderabad"
+    - "pune"
+    - "chennai"
+    - "china"
+    - "beijing"
+    - "shanghai"
+    - "shenzhen"
+    - "japan"
+    - "tokyo"
+    - "osaka"
+    - "singapore"
+    - "hong kong"
+    - "south korea"
+    - "seoul"
+    - "taiwan"
+    - "taipei"
+    - "australia"
+    - "sydney"
+    - "melbourne"
+    - "new zealand"
+    - "auckland"
+    - "indonesia"
+    - "jakarta"
+    - "malaysia"
+    - "kuala lumpur"
+    - "thailand"
+    - "bangkok"
+    - "philippines"
+    - "manila"
+    - "vietnam"
+    - "pakistan"
+    # Middle East & Africa
+    - "uae"
+    - "dubai"
+    - "abu dhabi"
+    - "saudi"
+    - "riyadh"
+    - "israel"
+    - "tel aviv"
+    - "south africa"
+    - "johannesburg"
+    - "cape town"
+    - "nigeria"
+    - "lagos"
+    - "kenya"
+    - "nairobi"
+    - "egypt"
+    - "cairo"
+    - "morocco"
+    # Latin America
+    - "brazil"
+    - "sao paulo"
+    - "argentina"
+    - "buenos aires"
+    - "colombia"
+    - "bogota"
+    - "chile"
+    - "santiago"
+    - "peru"
+    - "lima"
+
+# ---------- EXPERIENCE FILTER ----------
+experience_filter:
+  max_years_required: 5  # Disqualify jobs requiring >= N years of experience (0 = disabled)
+                         # Catches: "5+ years of experience", "at least 5 years", "5-7 years"
+
+# ---------- DATE FILTER ----------
+date_filter:
+  days: 7   # Only show jobs posted/updated in the last N days (ATS + Progressive Data)
+            # Override per-run with --no-date-filter to seed the dedup DB on first run
+
+# ---------- TITLE KEYWORDS (positive signals) ----------
+# A job title matching ANY of these gets a score boost.
+title_keywords:
+  tier1:   # Strong match — high boost (+30)
+    - "strategy & operations"
+    - "business operations"
+    - "strategy"
+    - "operations"
+    - "chief of staff"
+    - "strategic"
+    - "GTM operations"
+  tier2:   # Good match — medium boost (+15)
+    - "program manager"
+    - "product manager"
+    - "project manager"
+    - "business development"
+    - "growth"
+    - "analytics"
+    - "data analyst"
+    - "associate"
+    - "consultant"
+    - "policy"
+  tier3:   # Worth considering — small boost (+7)
+    - "campaigns"
+    - "civic"
+    - "research"
+    - "impact"
+
+# ---------- DESCRIPTION KEYWORDS ----------
+# Job descriptions mentioning these get a score boost.
+description_keywords:
+  strong:   # +5 each
+    - "management consulting"
+    - "A/B testing"
+    - "KPIs"
+    - "establish KPIs"
+    - "build dashboards"
+    - "dashboard"
+    - "large datasets"
+    - "Looker"
+    - "market research"
+    - "due diligence"
+    - "energy"
+    - "housing"
+    - "industrial"
+  moderate:   # +2 each
+    - "financial modeling"
+    - "stakeholders"
+    - "Python"
+    - "SQL"
+    - "Tableau"
+    - "Excel"
+    - "data-driven"
+    - "nonprofit"
+    - "civic"
+    - "political"
+    - "campaign"
+    - "infrastructure"
+    - "construction"
+
+# ---------- NEGATIVE KEYWORDS (strong penalties) ----------
+# Jobs with these words in the title are deprioritized or skipped.
+negative_title_keywords:
+  - "engineer"
+  - "software"
+  - "developer"
+  - "devops"
+  - "designer"
+  - "UX"
+  - "UI"
+  - "accountant"
+  - "accounting"
+  - "nurse"
+  - "medical"
+  - "legal"
+  - "attorney"
+  - "lawyer"
+  - "sales representative"
+  - "customer service"
+  - "driver"
+  - "warehouse"
+  - "account executive"
+  - "account manager"
+  - "sales manager"
+  - "sales director"
+  - "recruiter"
+  - "recruiting"
+  - "talent acquisition"
+  - "human resources"
+  - "marketing manager"
+  - "content manager"
+  - "content strategist"
+  - "financial analyst"
+  - "investment"
+  - "banking"
+  - "intern"
+  - "VP"
+  - "Vice President"
+  - "Head of"
+  - "Senior Director"
+  - "Senior Manager"
+  - "director"
+  - "content strategy"
+  - "strategic finance"
+  - "people operations"
+
+# ---------- NEGATIVE COMPANIES (hard disqualifier — matched against company name) ----------
+negative_companies:
+  - "FanDuel"       # sports betting
+  - "DraftKings"    # sports betting
+  - "Anduril"       # defense tech
+  - "Shield AI"     # defense AI
+  - "Palantir"      # defense/surveillance
+
+# ---------- NEGATIVE DESCRIPTION KEYWORDS (hard disqualifier — matched against description) ----------
+# Use specific phrases to avoid false positives.
+negative_description_keywords:
+  - "sports betting"
+  - "sportsbook"
+  - "online casino"
+  - "iGaming"
+  - "TS/SCI"
+  - "DoD clearance"
+  - "defense contractor"
+  - "security clearance required"
+  - "5+ years"
+  - "10+ years"
+
+# ---------- PREFERRED ORGS / INDUSTRIES ----------
+# Matching these in company name or description gives a bonus.
+preferred_orgs:
+  - "nonprofit"
+  - "foundation"
+  - "institute"
+  - "fund"
+  - "democratic"
+  - "progressive"
+  - "civic"
+  - "policy"
+  - "Amtrak"
+  - "infrastructure"
+  - "construction"
+  - "energy"
+  - "solar"
+  - "housing"
+  - "union"
+  - "labor"
+
+# ---------- HIRING CAFE SETTINGS ----------
+hiring_cafe:
+  # Search queries to run — each gets its own API call
+  queries:
+    - "strategy operations"
+    - "chief of staff"
+    - "program manager nonprofit"
+    - "policy analyst"
+  workplace_types:
+    - "Remote"
+    - "Hybrid"
+    - "Onsite"
+  seniority:
+    - "Entry Level"
+    - "Mid Level"
+  commitment_types:
+    - "Full Time"
+  date_posted_days: 7   # Only fetch jobs posted in last N days
+
+# ---------- PROGRESSIVE DATA JOBS SETTINGS ----------
+progressive_data:
+  url: "https://www.progressivedatajobs.org/job-postings/"
+  # Filter by these title keywords (if empty, fetches all)
+  title_filter: []
+
+# ---------- LEVER / GREENHOUSE COMPANY PAGES ----------
+# Add companies you want to monitor here.
+# Use "lever" or "greenhouse" as the ats type.
+# The slug is the company identifier used in their ATS URL.
+# Example Lever: https://jobs.lever.co/{slug}
+# Example Greenhouse: https://boards.greenhouse.io/{slug}
+company_pages:
+  # Progressive / civic / political
+  - name: "GrowProgress"
+    ats: "lever"
+    slug: "growprogress"
+  - name: "Obama Foundation"
+    ats: "greenhouse"
+    slug: "obamafoundation"
+  - name: "Everytown for Gun Safety"
+    ats: "lever"
+    slug: "everytown"
+  - name: "Sunrise Movement"
+    ats: "lever"
+    slug: "sunrisemovement"
+  # Add more companies here — I'll help you identify ATS slugs
