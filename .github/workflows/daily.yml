@@ -2,9 +2,9 @@ name: Daily Job Digest
 
 on:
   schedule:
-    # 8 AM CDT (Mar-Nov, UTC-5) = 13:00 UTC
-    # During CST (Nov-Mar, UTC-6) this fires at 7 AM Chicago time
-    - cron: "0 13 * * *"
+    # 11 AM CST (UTC-6) = 17:00 UTC  ← temporary for testing
+    # Change back to "0 13 * * *" for 8 AM CDT daily
+    - cron: "0 17 * * *"
   workflow_dispatch:  # Manual trigger from GitHub Actions UI
 
 permissions:
