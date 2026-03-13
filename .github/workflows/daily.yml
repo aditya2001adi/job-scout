@@ -4,7 +4,7 @@ on:
   schedule:
     # 11 AM CST (UTC-6) = 17:00 UTC  ← temporary for testing
     # Change back to "0 13 * * *" for 8 AM CDT daily
-    - cron: "0 17 * * *"
+    - cron: "15 17 * * *"
   workflow_dispatch:  # Manual trigger from GitHub Actions UI
 
 permissions:
