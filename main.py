@@ -66,10 +66,21 @@ def run(dry_run: bool = False, no_claude: bool = False, sources=None, no_date_fi
     print(f"  After scoring: {len(ranked)} jobs above threshold")
 
     # ── 2b. Deduplicate same-title/company across locations ────
+    # Normalize titles before comparing so "Strategy Associate - New York" and
+    # "Strategy Associate - San Francisco" collapse to the same key.
+    # Key is always (normalized_title, company) — same title at different companies is fine.
+    import re as _re
+    def _normalize_title(t: str) -> str:
+        # Strip trailing " - Location", " | Location" suffixes (capital-letter hint)
+        t = _re.sub(r'\s*[-–|]\s*[A-Z][^-–|]{1,40}$', '', t)
+        # Strip trailing parentheticals like " (Remote)" or " (Chicago, IL)"
+        t = _re.sub(r'\s*\([^)]{1,50}\)\s*$', '', t)
+        return t.lower().strip()
+
     seen_title_co: set = set()
     unique_ranked = []
     for job in ranked:
-        key = (job.title.lower().strip(), job.company.lower().strip())
+        key = (_normalize_title(job.title), job.company.lower().strip())
         if key not in seen_title_co:
             seen_title_co.add(key)
             unique_ranked.append(job)

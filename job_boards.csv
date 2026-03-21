@@ -4,7 +4,6 @@ Duolingo,language learning,Greenhouse,https://boards.greenhouse.io/duolingo
 Gong,revenue intelligence,Greenhouse,https://boards.greenhouse.io/gong
 HelloFresh,meal kits,Greenhouse,https://boards.greenhouse.io/hellofresh
 J.D. Power,consumer analytics,Greenhouse,https://boards.greenhouse.io/jdpower
-Scout24,property marketplace,Greenhouse,https://boards.greenhouse.io/scout24
 Instacart,grocery delivery,Greenhouse,https://boards.greenhouse.io/instacart
 DoorDash,food delivery,Greenhouse,https://boards.greenhouse.io/doordash
 Coinbase,crypto exchange,Greenhouse,https://boards.greenhouse.io/coinbase
@@ -18,8 +17,6 @@ Ramp,expense management,Ashby,https://jobs.ashbyhq.com/ramp
 Plaid,banking APIs,Greenhouse,https://boards.greenhouse.io/plaid
 Chime,neobank platform,Greenhouse,https://boards.greenhouse.io/chime
 SoFi,digital banking,Greenhouse,https://boards.greenhouse.io/sofi
-Betterment,robo advisor,Greenhouse,https://boards.greenhouse.io/betterment
-Wealthfront,investment automation,Greenhouse,https://boards.greenhouse.io/wealthfront
 Opendoor,home marketplace,Greenhouse,https://boards.greenhouse.io/opendoor
 Redfin,real estate,Greenhouse,https://boards.greenhouse.io/redfin
 Zillow,home listings,Greenhouse,https://boards.greenhouse.io/zillow
@@ -32,16 +29,7 @@ Canva,design platform,Greenhouse,https://boards.greenhouse.io/canva
 Databricks,data platform,Greenhouse,https://boards.greenhouse.io/databricks
 Snowflake,data warehouse,Greenhouse,https://boards.greenhouse.io/snowflake
 MongoDB,database software,Greenhouse,https://boards.greenhouse.io/mongodb
-Elastic,search platform,Greenhouse,https://boards.greenhouse.io/elastic
-HashiCorp,infrastructure software,Greenhouse,https://boards.greenhouse.io/hashicorp
 Confluent,data streaming,Greenhouse,https://boards.greenhouse.io/confluent
-Cockroach Labs,distributed database,Greenhouse,https://boards.greenhouse.io/cockroachlabs
-PlanetScale,serverless database,Greenhouse,https://boards.greenhouse.io/planetscale
-Supabase,backend platform,Greenhouse,https://boards.greenhouse.io/supabase
-Render,cloud hosting,Ashby,https://jobs.ashbyhq.com/render
-Vercel,frontend platform,Greenhouse,https://boards.greenhouse.io/vercel
-Netlify,web hosting,Greenhouse,https://boards.greenhouse.io/netlify
-Postman,api platform,Greenhouse,https://boards.greenhouse.io/postman
 Segment,customer data,Greenhouse,https://boards.greenhouse.io/segment
 Amplitude,product analytics,Greenhouse,https://boards.greenhouse.io/amplitude
 Mixpanel,user analytics,Greenhouse,https://boards.greenhouse.io/mixpanel
@@ -50,18 +38,10 @@ Zendesk,support software,Greenhouse,https://boards.greenhouse.io/zendesk
 Gusto,payroll platform,Greenhouse,https://boards.greenhouse.io/gusto
 Carta,equity management,Greenhouse,https://boards.greenhouse.io/carta
 Checkr,background checks,Greenhouse,https://boards.greenhouse.io/checkr
-Snyk,security scanning,Greenhouse,https://boards.greenhouse.io/snyk
-GitLab,dev platform,Greenhouse,https://boards.greenhouse.io/gitlab
-Docker,container platform,Greenhouse,https://boards.greenhouse.io/docker
-DigitalOcean,cloud hosting,Greenhouse,https://boards.greenhouse.io/digitalocean
-CircleCI,ci cd,Greenhouse,https://boards.greenhouse.io/circleci
 PagerDuty,incident management,Greenhouse,https://boards.greenhouse.io/pagerduty
-LaunchDarkly,feature flags,Greenhouse,https://boards.greenhouse.io/launchdarkly
 Cloudflare,internet infrastructure,Greenhouse,https://boards.greenhouse.io/cloudflare
-Fastly,edge computing,Greenhouse,https://boards.greenhouse.io/fastly
 Airtable,spreadsheet database,Greenhouse,https://boards.greenhouse.io/airtable
 Zapier,workflow automation,Greenhouse,https://boards.greenhouse.io/zapier
-Calendly,meeting scheduling,Greenhouse,https://boards.greenhouse.io/calendly
 ClickUp,task management,Greenhouse,https://boards.greenhouse.io/clickup
 Monday.com,work platform,Greenhouse,https://boards.greenhouse.io/monday
 Asana,project management,Greenhouse,https://boards.greenhouse.io/asana
@@ -69,9 +49,6 @@ Loom,video messaging,Greenhouse,https://boards.greenhouse.io/loom
 Discord,chat platform,Greenhouse,https://boards.greenhouse.io/discord
 Reddit,discussion forum,Greenhouse,https://boards.greenhouse.io/reddit
 Twitch,live streaming,Greenhouse,https://boards.greenhouse.io/twitch
-Substack,newsletter platform,Greenhouse,https://boards.greenhouse.io/substack
-Medium,blog platform,Greenhouse,https://boards.greenhouse.io/medium
-BuzzFeed,digital media,Greenhouse,https://boards.greenhouse.io/buzzfeed
 Axios,news outlet,Greenhouse,https://boards.greenhouse.io/axios
 Morning Brew,business newsletter,Greenhouse,https://boards.greenhouse.io/morningbrew
 Vox Media,digital media,Greenhouse,https://boards.greenhouse.io/voxmedia
@@ -80,13 +57,10 @@ StubHub,ticket marketplace,Greenhouse,https://boards.greenhouse.io/stubhub
 Oura,smart ring,Greenhouse,https://boards.greenhouse.io/oura
 Whoop,fitness tracker,Greenhouse,https://boards.greenhouse.io/whoop
 Peloton,fitness equipment,Greenhouse,https://boards.greenhouse.io/peloton
-Eight Sleep,smart mattress,Greenhouse,https://boards.greenhouse.io/eightsleep
 Hims & Hers,telehealth platform,Greenhouse,https://boards.greenhouse.io/hims
 Ro,telehealth company,Greenhouse,https://boards.greenhouse.io/ro
 Capsule Pharmacy,digital pharmacy,Greenhouse,https://boards.greenhouse.io/capsule
 Tempus,precision medicine,Greenhouse,https://boards.greenhouse.io/tempus
-Benchling,biotech software,Greenhouse,https://boards.greenhouse.io/benchling
-Recursion,drug discovery,Greenhouse,https://boards.greenhouse.io/recursion
 Scale AI,ai infrastructure,Greenhouse,https://boards.greenhouse.io/scaleai
 OpenAI,ai research,Ashby,https://jobs.ashbyhq.com/openai
 Anthropic,ai safety,Ashby,https://jobs.ashbyhq.com/anthropic
@@ -96,18 +70,6 @@ Stability AI,generative ai,Greenhouse,https://boards.greenhouse.io/stabilityai
 Hugging Face,ml platform,Greenhouse,https://boards.greenhouse.io/huggingface
 Runway,ai video,Ashby,https://jobs.ashbyhq.com/runway
 ElevenLabs,voice ai,Ashby,https://jobs.ashbyhq.com/elevenlabs
-Replit,coding platform,Ashby,https://jobs.ashbyhq.com/replit
-Cursor,ai coding,Ashby,https://jobs.ashbyhq.com/cursor
-Linear,issue tracking,Ashby,https://jobs.ashbyhq.com/linear
-Retool,internal tools,Greenhouse,https://boards.greenhouse.io/retool
-Framer,website builder,Greenhouse,https://boards.greenhouse.io/framer
-Webflow,website builder,Greenhouse,https://boards.greenhouse.io/webflow
-Algolia,search api,Greenhouse,https://boards.greenhouse.io/algolia
-Contentful,headless cms,Greenhouse,https://boards.greenhouse.io/contentful
-Sanity,content platform,Greenhouse,https://boards.greenhouse.io/sanity
-Storyblok,headless cms,Greenhouse,https://boards.greenhouse.io/storyblok
-Strapi,headless cms,Greenhouse,https://boards.greenhouse.io/strapi
-Builder.io,visual cms,Greenhouse,https://boards.greenhouse.io/builderio
 Klaviyo,email marketing,Greenhouse,https://boards.greenhouse.io/klaviyo
 Braze,customer engagement,Greenhouse,https://boards.greenhouse.io/braze
 Heap,product analytics,Greenhouse,https://boards.greenhouse.io/heapanalytics
@@ -120,7 +82,6 @@ AngelList,startup investing,Greenhouse,https://boards.greenhouse.io/angellist
 Crunchbase,startup data,Greenhouse,https://boards.greenhouse.io/crunchbase
 PitchBook,market research,Greenhouse,https://boards.greenhouse.io/pitchbook
 CB Insights,market intelligence,Greenhouse,https://boards.greenhouse.io/cbinsights
-Clearbit,customer data,Greenhouse,https://boards.greenhouse.io/clearbit
 Clari,revenue platform,Greenhouse,https://boards.greenhouse.io/clari
 Outreach,sales engagement,Greenhouse,https://boards.greenhouse.io/outreach
 Salesloft,sales engagement,Greenhouse,https://boards.greenhouse.io/salesloft
@@ -128,24 +89,16 @@ Apollo.io,sales intelligence,Greenhouse,https://boards.greenhouse.io/apollo
 ZoomInfo,b2b data,Greenhouse,https://boards.greenhouse.io/zoominfo
 Demandbase,account marketing,Greenhouse,https://boards.greenhouse.io/demandbase
 G2,software reviews,Greenhouse,https://boards.greenhouse.io/g2
-TrustRadius,software reviews,Greenhouse,https://boards.greenhouse.io/trustradius
 Pigment,business planning,Greenhouse,https://boards.greenhouse.io/pigment
-Airbyte,data integration,Greenhouse,https://boards.greenhouse.io/airbyte
-Fivetran,data pipelines,Greenhouse,https://boards.greenhouse.io/fivetran
-dbt Labs,data transformation,Greenhouse,https://boards.greenhouse.io/dbtlabs
 Metabase,analytics platform,Greenhouse,https://boards.greenhouse.io/metabase
 Ashby,recruiting software,Ashby,https://jobs.ashbyhq.com/ashby
 Deel,global payroll,Ashby,https://jobs.ashbyhq.com/deel
 Remote,global employment,Ashby,https://jobs.ashbyhq.com/remote
 Vanta,security compliance,Ashby,https://jobs.ashbyhq.com/vanta
-Tailscale,secure networking,Ashby,https://jobs.ashbyhq.com/tailscale
 Glean,enterprise search,Ashby,https://jobs.ashbyhq.com/glean
 Harvey AI,legal ai,Ashby,https://jobs.ashbyhq.com/harvey
 Mistral AI,language models,Ashby,https://jobs.ashbyhq.com/mistral
 Character AI,ai chatbots,Ashby,https://jobs.ashbyhq.com/character
-LangChain,ai tooling,Ashby,https://jobs.ashbyhq.com/langchain
-Modal Labs,cloud compute,Ashby,https://jobs.ashbyhq.com/modal
-Arc Browser (The Browser Company),web browser,Ashby,https://jobs.ashbyhq.com/thebrowsercompany
 Superhuman,email client,Ashby,https://jobs.ashbyhq.com/superhuman
 Clay,crm automation,Ashby,https://jobs.ashbyhq.com/clay
 Form Energy,Grid batteries,Greenhouse,https://boards.greenhouse.io/formenergy
@@ -181,15 +134,10 @@ Canvas Construction,Construction robotics,Greenhouse,https://boards.greenhouse.i
 Versatile Construction,Construction analytics,Greenhouse,https://boards.greenhouse.io/versatile
 Fictiv,Industrial manufacturing platform,Greenhouse,https://boards.greenhouse.io/fictiv
 Xometry,Manufacturing marketplace,Greenhouse,https://boards.greenhouse.io/xometry
-Fast Radius,Digital manufacturing,Greenhouse,https://boards.greenhouse.io/fastradius
-Velo3D,Industrial 3D printing,Greenhouse,https://boards.greenhouse.io/velo3d
 Relativity Space,Aerospace manufacturing,Greenhouse,https://boards.greenhouse.io/relativityspace
 Astranis,Satellite manufacturing,Greenhouse,https://boards.greenhouse.io/astranis
 Planet Labs,Earth observation satellites,Greenhouse,https://boards.greenhouse.io/planetlabs
 Rocket Lab,Aerospace launch systems,Greenhouse,https://boards.greenhouse.io/rocketlab
-Anduril Industries,Defense manufacturing,Greenhouse,https://boards.greenhouse.io/anduril
-Shield AI,Defense robotics,Greenhouse,https://boards.greenhouse.io/shieldai
-Saronic Technologies,Autonomous naval vessels,Greenhouse,https://boards.greenhouse.io/saronic
 Skydio,Autonomous drones,Greenhouse,https://boards.greenhouse.io/skydio
 Zipline,Autonomous logistics drones,Greenhouse,https://boards.greenhouse.io/zipline
 Kodiak Robotics,Autonomous trucking,Greenhouse,https://boards.greenhouse.io/kodiak
@@ -201,8 +149,6 @@ Outrider,Autonomous yard trucks,Greenhouse,https://boards.greenhouse.io/outrider
 ChargePoint,EV charging infrastructure,Greenhouse,https://boards.greenhouse.io/chargepoint
 EVgo,EV charging network,Greenhouse,https://boards.greenhouse.io/evgo
 FreeWire Technologies,EV charging hardware,Greenhouse,https://boards.greenhouse.io/freewire
-Volta Charging,EV charging network,Greenhouse,https://boards.greenhouse.io/voltacharging
-Wallbox,EV chargers,Greenhouse,https://boards.greenhouse.io/wallbox
 Ample,EV battery swapping,Greenhouse,https://boards.greenhouse.io/ample
 Sila Nanotechnologies,Battery materials,Greenhouse,https://boards.greenhouse.io/silanano
 QuantumScape,Battery technology,Greenhouse,https://boards.greenhouse.io/quantumscape
@@ -218,20 +164,7 @@ LevelTen Energy,Renewable energy marketplace,Greenhouse,https://boards.greenhous
 Arcadia Energy,Energy marketplace,Greenhouse,https://boards.greenhouse.io/arcadia
 Palmetto Solar,Solar energy provider,Greenhouse,https://boards.greenhouse.io/palmetto
 Enphase Energy,Solar electronics,Greenhouse,https://boards.greenhouse.io/enphase
-Richmond American Homes,Homebuilder,iCIMS,https://careers-mdch.icims.com/jobs
-Sekisui House US,Homebuilder,iCIMS,https://careers-mdch.icims.com/jobs
-Presbyterian Homes,Senior housing,iCIMS,https://careers-preshomes.icims.com/jobs
-Blanchard Machinery,Construction equipment,iCIMS,https://careers-blanchard.icims.com/jobs
-ConstructConnect,Construction data,iCIMS,https://careers-constructconnect.icims.com/jobs
-UIC Government Services,Construction services,iCIMS,https://careers-uicalaska.icims.com/jobs
-Colliers Engineering & Design,Engineering consulting,iCIMS,https://careers-colliersengineering.icims.com/jobs
-Page Southerland Page,Architecture engineering,iCIMS,https://careers-pagethink.icims.com/jobs
-Vistry Group,Homebuilder,iCIMS,https://careers-vistry.icims.com/jobs
-Tri Pointe Homes,Homebuilder,iCIMS,https://careers-tripointehomes.icims.com/jobs
-Meritage Homes,Homebuilder,iCIMS,https://careers-meritagehomes.icims.com/jobs
-Beazer Homes,Homebuilder,iCIMS,https://careers-beazer.icims.com/jobs
-KB Home,Homebuilder,iCIMS,https://careers-kbhome.icims.com/jobs
-Pattern Energy,Renewable energy,iCIMS,https://careers-patternenergy.icims.com/jobs
-MasTec,Infrastructure construction,iCIMS,https://careers-mastec.icims.com/jobs
-Quanta Services,Energy infrastructure,iCIMS,https://careers-quanta.icims.com/jobs
-Skanska USA,Infrastructure construction,iCIMS,https://careers-skanska.icims.com/jobs
+Datadog,monitoring and analytics,Ashby,https://jobs.ashbyhq.com/datadog
+Whatnot,live commerce marketplace,Greenhouse,https://boards.greenhouse.io/whatnot
+Zip,procurement platform,Ashby,https://jobs.ashbyhq.com/zip
+Fanatics,sports merchandise,Greenhouse,https://boards.greenhouse.io/fanatics

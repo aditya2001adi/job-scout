@@ -190,9 +190,15 @@ location_filter:
     - "lima"
 
 # ---------- EXPERIENCE FILTER ----------
+# Graduated penalties — applied after keyword scoring (so good-fit jobs can still partially rank).
+# hard_disqualify_years: instant reject (return -1.0)
+# heavy_penalty_years:   -50 pts (nearly always filtered by min_score threshold)
+# steep_penalty_years:   -25 pts (may still surface if everything else scores very high)
+# Note: "3-5 years" passes through (lower bound 3 < 5); only triggers when lower bound >= threshold.
 experience_filter:
-  max_years_required: 5  # Disqualify jobs requiring >= N years of experience (0 = disabled)
-                         # Catches: "5+ years of experience", "at least 5 years", "5-7 years"
+  hard_disqualify_years: 10
+  heavy_penalty_years: 7
+  steep_penalty_years: 5
 
 # ---------- DATE FILTER ----------
 date_filter:
@@ -210,6 +216,8 @@ title_keywords:
     - "chief of staff"
     - "strategic"
     - "GTM operations"
+    - "GTM"          # "GTM Strategy", "GTM Strategic Initiative Associate", etc.
+    - "associate"    # Adi's primary seniority level — appears in 25+ applied titles
   tier2:   # Good match — medium boost (+15)
     - "program manager"
     - "product manager"
@@ -218,7 +226,7 @@ title_keywords:
     - "growth"
     - "analytics"
     - "data analyst"
-    - "associate"
+    - "analyst"      # Many applied titles: "Senior Analyst, Commercial Strategy" etc.
     - "consultant"
     - "policy"
   tier3:   # Worth considering — small boost (+7)
@@ -244,6 +252,12 @@ description_keywords:
     - "energy"
     - "housing"
     - "industrial"
+    - "cross-functional"    # Universal in S&O JDs — strong match signal
+    - "go-to-market"        # GTM focus
+    - "strategic initiatives" # CoS/S&O signal
+    - "program management"  # PM overlap
+    - "process improvement" # Ops signal
+    - "process optimization"
   moderate:   # +2 each
     - "financial modeling"
     - "stakeholders"
@@ -258,6 +272,17 @@ description_keywords:
     - "campaign"
     - "infrastructure"
     - "construction"
+    - "OKRs"
+    - "executive team"
+    - "business case"
+    - "workstreams"
+    - "roadmap"
+    - "operating cadence"
+    - "2+ years"            # Mid-level experience signals — boosts appropriate seniority
+    - "3+ years"
+    - "4+ years"
+    - "1-3 years"
+    - "2-4 years"
 
 # ---------- NEGATIVE KEYWORDS (strong penalties) ----------
 # Jobs with these words in the title are deprioritized or skipped.
@@ -304,6 +329,8 @@ negative_title_keywords:
   - "content strategy"
   - "strategic finance"
   - "people operations"
+  - "principal"      # Too senior (Principal PM, Principal Strategist, etc.)
+  - "staff"          # Too senior when used as seniority (Staff PM, Staff Engineer)
 
 # ---------- NEGATIVE COMPANIES (hard disqualifier — matched against company name) ----------
 negative_companies:
@@ -324,8 +351,6 @@ negative_description_keywords:
   - "DoD clearance"
   - "defense contractor"
   - "security clearance required"
-  - "5+ years"
-  - "10+ years"
 
 # ---------- PREFERRED ORGS / INDUSTRIES ----------
 # Matching these in company name or description gives a bonus.
@@ -346,6 +371,13 @@ preferred_orgs:
   - "housing"
   - "union"
   - "labor"
+  - "caterpillar"     # Industrial companies Adi has applied to
+  - "grainger"
+  - "republic services"
+  - "ge vernova"
+  - "schneider"
+  - "datadog"         # Tech companies with strong S&O roles Adi targets
+  - "anthropic"
 
 # ---------- HIRING CAFE SETTINGS ----------
 hiring_cafe:

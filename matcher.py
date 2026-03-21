@@ -18,11 +18,12 @@ def _exp_re(threshold: int) -> re.Pattern:
     else:
         leading = r"[1-9]\d"
     return re.compile(
-        # "5+ years of experience" / "5-7 years" / "10 years hands-on experience"
+        # "5+ years of experience" / "5-7 years experience" / "10 years' experience"
+        # years?'? handles possessive form ("8 years' experience")
         # Allow 0-3 words between "years" and "experience" to catch varied phrasings
-        rf"\b(?:{leading})\+?\s*(?:[-–]\s*\d+\s*)?\s*years?\s+(?:[\w\-/]+\s+){{0,3}}experience"
+        rf"\b(?:{leading})\+?\s*(?:[-–]\s*\d+\s*)?\s*years?'?\s+(?:[\w\-/]+\s+){{0,3}}experience"
         # "minimum 5 years" / "at least 5 years"
-        rf"|(?:minimum(?:\s+of)?|at\s+least)\s+(?:{leading})\+?\s*years?",
+        rf"|(?:minimum(?:\s+of)?|at\s+least)\s+(?:{leading})\+?\s*years?'?",
         re.IGNORECASE,
     )
 
@@ -190,12 +191,6 @@ def score(job: Job, cfg: dict) -> float:
                 if phrase in desc_lower:
                     return -1.0
 
-    # --- Experience level filter ---
-    max_yrs = cfg.get("experience_filter", {}).get("max_years_required", 5)
-    if max_yrs > 0 and job.description:
-        if _exp_re(max_yrs).search(job.description):
-            return -1.0  # Requires too many years of experience
-
     # --- Title keyword boosts ---
     title_cfg = cfg.get("title_keywords", {})
     for kw in title_cfg.get("tier1", []):
@@ -226,6 +221,24 @@ def score(job: Job, cfg: dict) -> float:
     # --- Remote bonus (small) ---
     if job.remote:
         total += 3
+
+    # --- Experience level penalties (graduated) ---
+    # Applied after keyword scoring so bonuses still inform ranking even for over-experienced jobs.
+    # hard_disqualify_years (default 10): instant reject
+    # heavy_penalty_years (default 7): -50 pts (very unlikely to surface)
+    # steep_penalty_years (default 5): -25 pts (may still surface if otherwise strong match)
+    if job.description:
+        exp_cfg = cfg.get("experience_filter", {})
+        hard_yrs   = exp_cfg.get("hard_disqualify_years", 10)
+        heavy_yrs  = exp_cfg.get("heavy_penalty_years", 7)
+        steep_yrs  = exp_cfg.get("steep_penalty_years", 5)
+        desc = job.description
+        if hard_yrs > 0 and _exp_re(hard_yrs).search(desc):
+            return -1.0
+        elif heavy_yrs > 0 and _exp_re(heavy_yrs).search(desc):
+            total -= 50
+        elif steep_yrs > 0 and _exp_re(steep_yrs).search(desc):
+            total -= 25
 
     return min(total, 100.0)
 
