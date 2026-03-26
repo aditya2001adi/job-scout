@@ -23,7 +23,7 @@ If dedup blocks results during testing: `rm jobs.db`
 Job Scout/
 ├── main.py                  # Orchestrator: scrape → filter → rank → email
 ├── config.yaml              # Keywords, scoring weights, email settings — edit to tune
-├── job_boards.csv           # 33 verified energy/construction companies (Greenhouse + Ashby)
+├── job_boards.csv           # 47 verified energy/construction companies (Greenhouse + Ashby)
 ├── matcher.py               # Keyword scoring (0-100) + Claude Haiku match explanations
 ├── dedup.py                 # SQLite seen-jobs tracker (jobs.db, gitignored)
 ├── emailer.py               # Resend API email sender
